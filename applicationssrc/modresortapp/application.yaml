@@ -1,0 +1,18 @@
+apiVersion: app.k8s.io/v1beta1
+kind: Application
+metadata:
+  name: userXX-modresort101-modresortapp
+  namespace: userXX-modresort-project
+  labels:
+    app: modresortapp
+spec:
+  selector:
+    matchExpressions:
+    - key: release
+      operator: In
+      values:
+      - userXX-modresort101
+  componentKinds:
+  - group: app.ibm.com
+    kind: Subscription
+

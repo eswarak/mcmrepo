@@ -1,0 +1,14 @@
+apiVersion: app.ibm.com/v1alpha1
+kind: Subscription
+metadata:
+  name: userXX-mcmqod-subscription
+  labels:
+    app: qod-app
+spec:
+  channel: userXX-mcmqod-channel/userXX-mcmqod-channel
+  name: qod-app
+  placement:
+    placementRef:
+      name: userXX-mcmqod-placementrule
+      kind: PlacementRule
+      group: app.ibm.com

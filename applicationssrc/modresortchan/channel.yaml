@@ -1,0 +1,11 @@
+apiVersion: app.ibm.com/v1alpha1
+kind: Channel
+metadata:
+  name: userXX-modresort-devchan
+  namespace: userXX-modresort-entitlement
+  labels:
+    app: modresortchan
+spec:
+  type: Namespace
+  pathname: userXX-modresort-entitlement
+

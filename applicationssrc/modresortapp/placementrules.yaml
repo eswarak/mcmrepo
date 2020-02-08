@@ -1,0 +1,14 @@
+apiVersion: app.ibm.com/v1alpha1
+kind: PlacementRule
+metadata:
+  name: userXX-modresortapp101-modresortapp
+  namespace: userXX-modresort-project
+  labels:
+    app: modresortapp
+    release: userXX-modresort101
+spec:
+  clusterReplicas: 1
+  clusterLabels:
+    matchLabels:  
+      environment: <env label>
+
